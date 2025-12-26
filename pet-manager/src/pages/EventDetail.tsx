@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { usePets } from '../contexts/PetContext';
 import { Button, Card, CardContent, CardHeader, CardTitle, Badge } from '../components/ui';
-import { ArrowLeft, Edit, Trash2, Calendar, DollarSign, MapPin, User } from 'lucide-react';
+import { ArrowLeft, Trash2, Calendar, DollarSign, MapPin, User } from 'lucide-react';
 import { formatDate } from '../lib/utils';
 
 const eventLabels: Record<string, string> = {
