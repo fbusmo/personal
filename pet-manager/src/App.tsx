@@ -4,6 +4,7 @@ import { Home } from './pages/Home';
 import { PetForm } from './pages/PetForm';
 import { PetProfile } from './pages/PetProfile';
 import { EventForm } from './pages/EventForm';
+import { EventDetail } from './pages/EventDetail';
 import { Reminders } from './pages/Reminders';
 import { useEffect } from 'react';
 import { initializeSettings } from './lib/db';
@@ -23,6 +24,7 @@ function App() {
             <Route path="/pets/:id/edit" element={<PetForm />} />
             <Route path="/pets/:id" element={<PetProfile />} />
             <Route path="/pets/:petId/events/new" element={<EventForm />} />
+            <Route path="/pets/:petId/events/:eventId" element={<EventDetail />} />
             <Route path="/reminders" element={<Reminders />} />
           </Routes>
         </div>
